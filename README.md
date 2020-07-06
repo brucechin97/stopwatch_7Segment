@@ -11,6 +11,7 @@ It is done by implementing a timer interrupt and a GPIO interrupt. The stopwatch
 ![Schematics of the 7-segment](https://github.com/brucechin97/stopwatch_7Segment/blob/master/7%20Segment%20Display%20Internal%20Circuit.png)  ![Segments A-G with a decimal point](https://github.com/brucechin97/stopwatch_7Segment/blob/master/7-Segment-layout.png)
 
 In order for a specific segment to light up, the anode pin needs to be supplied with a positive voltage and the cathode with ground. Each pin was connected to a GPIO pin on the LPC 802 board so that the microcontroller could control its output by giving out either a binary 1 (3.3V) or a binary 0 (0V) at a specific time.
+
 ![Pin connections to the board](https://github.com/brucechin97/stopwatch_7Segment/blob/master/Pin-connections-to-board.png)
 
 
