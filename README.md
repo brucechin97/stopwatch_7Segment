@@ -7,7 +7,9 @@ It is done by implementing a timer interrupt and a GPIO interrupt. The stopwatch
 
 ## Hardware:
 4 digits 7-segment display SH5461AS is used for this project. The display has 12 pins: 8 anodes of the LEDs for segments a-g plus a decimal point, 4 pins for the cathode of each digit. 
+
 ![Schematics of the 7-segment](https://github.com/brucechin97/stopwatch_7Segment/blob/master/7%20Segment%20Display%20Internal%20Circuit.png)  ![Segments A-G with a decimal point](https://github.com/brucechin97/stopwatch_7Segment/blob/master/7-Segment-layout.png)
+
 In order for a specific segment to light up, the anode pin needs to be supplied with a positive voltage and the cathode with ground. Each pin was connected to a GPIO pin on the LPC 802 board so that the microcontroller could control its output by giving out either a binary 1 (3.3V) or a binary 0 (0V) at a specific time.
 ![Pin connections to the board](https://github.com/brucechin97/stopwatch_7Segment/blob/master/Pin-connections-to-board.png)
 
